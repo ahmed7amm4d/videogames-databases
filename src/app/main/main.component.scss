@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.filters {
+    max-width: 82.5rem;
+    margin: 1rem auto;
+}
+
+::ng-deep {
+    .ng-tns-c103-1 {
+        color: #cc007a !important;
+    }
+
+    .mat-form-field-flex {
+        background-color: #2d2d2d !important;
+    }
+
+    mat-label {
+        color: #cc007a;
+    }
+
+    .mat-form-field-underline {
+        background-color: #cc007a !important;
+    }
+
+    .mat-form-field-ripple {
+        background-color: #cc007a !important; 
+    }
+
+    .mat-select-value {
+        color: white;
+        opacity: 1;
+    }
+
+    .mat-select-arrow {
+        color: #cc007a;
+        opacity: 1;
+    }
+
+    .mat-select-panel {
+        background-color: #2d2d2d;
+    }
+
+    .mat-option-text {
+        color: white;
+    }
+
+    .mat-select-min-line {
+        color: white !important;
+    }
+}
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 82.5rem;
+    margin: 0 auto;
+}
+
+.game {
+    width: 19.3rem;
+    margin-right: 1.3rem;
+    margin-bottom: 1.3rem;
+    height: 21rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background-color: #2d2d2d;
+    box-shadow: 4px 3px 8px 0px #cc007a;
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 4px 3px 11px 6px #cc007a;
+        transform: translateY(-3px);
+    }
+
+    &-thumb-container {
+        background-color: black;
+        position: relative;
+        height: 15rem;
+        color: white;
+        text-align: center;
+    }
+
+    &-thumbnail {
+        display: block;
+        margin: 0 auto;
+        height: 15rem;
+        width: 100%;
+    }
+
+    &-description {
+        padding: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 4rem;
+    }
+
+    &-name {
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &-platforms {
+        display: flex;
+    }
+
+    &-platform {
+        width: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+

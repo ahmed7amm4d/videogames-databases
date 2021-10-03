@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.details-wrapper {
+    max-width: 82.5rem;
+    margin: auto;
+    position: relative;
+}
+
+.details {
+    ::ng-deep mwl-gauge {
+        width: 7rem;
+        height: 7rem;
+        display: block;
+        padding: 10px;
+
+        .dial {
+            stroke-width: 5;
+        }
+
+        .value {
+            stroke-dasharray: none;
+            stroke-width: 5;
+        }
+
+        .value-text {
+            font-family: 'Montserrat', sans-serif;
+            fill: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-shadow: -1px 1px 2px #cc007a, 1px 1px 2px #cc007a, 1px -1px 0 #cc007a, -1px -1px 0 #cc007a; 
+        }
+    }
+
+    .game-gauge {
+        position: absolute;
+        top: 5rem;
+        right: 10rem;
+
+        &-label {
+            font-size: 1rem;
+            color: white;
+            position: relative;
+            bottom: 3rem;
+            text-shadow: -1px 1px 2px #cc007a, 1px 1px 2px #cc007a, 1px -1px 0 #cc007a, -1px -1px 0 #cc007a; 
+        }
+    }
+}
+
+.game {
+    &-banner {
+        height: 20rem;
+        margin: auto;
+        overflow: hidden;
+        border-bottom: 5px solid #cc007a;
+
+        &-img {
+            position: relative;
+            width: 100%;
+            filter: blur(10px);
+        }
+    }
+
+    &-content {
+        text-align: center;
+        position: relative;
+        top: -200px;
+    }
+
+    &-header {
+        &-title {
+            font-size: 70px;
+            color: white;
+            font-weight: bold;
+            line-height: 70px;
+            white-space: nowrap;
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: -1px 1px 2px #cc007a, 1px 1px 2px #cc007a, 1px -1px 0 #cc007a, -1px -1px 0 #cc007a;    
+        }
+
+        &-release-date {
+            color: white;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: -1px 1px 2px #cc007a, 1px 1px 2px #cc007a, 1px -1px 0 #cc007a, -1px -1px 0 #cc007a;  
+        }
+
+        &-genres {
+            color: white;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: -1px 1px 2px #cc007a, 1px 1px 2px #cc007a, 1px -1px 0 #cc007a, -1px -1px 0 #cc007a;  
+        }
+    }
+}
